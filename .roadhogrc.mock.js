@@ -138,7 +138,7 @@ const proxy = {
 
 export default (noProxy
   ? {
-      'GET /api/(.*)': `http://119.29.91.202:7001/`,
-      'POST /api/(.*)': `http://119.29.91.202::7001/`,
+      'GET /api/(.*)': `http://localhost:7001/`,
+      'POST /api/(.*)': `http://localhost::7001/`,
     }
   : delay(proxy, 1000));
